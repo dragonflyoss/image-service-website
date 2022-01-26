@@ -1,0 +1,230 @@
+<template>
+  <section class="content" id="community">
+    <div class="line-bg">
+      <img src="~/static/images/line-bg.svg" alt="" />
+    </div>
+    <h3 class="title">Nydus Community</h3>
+    <img src="~/static/images/production.png" alt="" class="ready" />
+    <div class="companies">
+      <div class="item block">
+        <div class="intro">
+          <img src="~/static/images/quote-left.svg" alt="" class="quote" />Serve
+          container image acceleration in Cloud Infrastructure of
+          <span class="bold">ByteDance</span>.<img
+            src="~/static/images/quote-right.svg"
+            alt=""
+            class="quote"
+          />
+        </div>
+      </div>
+      <div class="item">
+        <img src="~/static/images/antgroup.png" alt="" class="logo" />
+        <div class="intro">
+          <img
+            src="~/static/images/quote-left.svg"
+            alt=""
+            class="quote"
+          />Serving large-scale clusters with millions of container creations
+          each day.<img
+            src="~/static/images/quote-right.svg"
+            alt=""
+            class="quote"
+          />
+        </div>
+      </div>
+      <div class="item">
+        <img src="~/static/images/aliyun.png" alt="" class="logo" />
+        <div class="intro">
+          <img
+            src="~/static/images/quote-left.svg"
+            alt=""
+            class="quote"
+          />Aliyun serverless image pull time drops from 20 seconds to 0.8s
+          seconds.<img
+            src="~/static/images/quote-right.svg"
+            alt=""
+            class="quote"
+          />
+        </div>
+      </div>
+    </div>
+    <img src="~/static/images/logo-large.png" alt="" class="logo-large" />
+    <div class="links">
+      <a
+        class="github"
+        target="_blank"
+        href="https://github.com/dragonflyoss/image-service"
+        ><img src="~/static/images/github.svg" alt="Nydus Github" />Github</a
+      >
+      <a
+        class="slack"
+        target="_blank"
+        href="https://join.slack.com/t/nydusimageservice/shared_invite/zt-pz4qvl4y-WIh4itPNILGhPS8JqdFm_w"
+        ><img src="~/static/images/slack.svg" alt="Slack" />Slack</a
+      >
+      <a class="dingtalk" v-tooltip="`Group Number: 34971767`"
+        ><img src="~/static/images/dingtalk.svg" alt="DingTalk" />DingTalk</a
+      >
+    </div>
+    <footer>© 2022 Nydus Developers</footer>
+  </section>
+</template>
+
+<script>
+export default {
+  name: "Community",
+};
+</script>
+
+<style lang="less" scoped>
+@import "@/static/css/base";
+
+.content {
+  padding-top: 200px;
+  margin-bottom: 20px;
+  .line-bg {
+    top: 50px;
+    transform: scaleX(-1);
+  }
+  > .title {
+    width: 450px;
+    font-size: 26px;
+    position: relative;
+    display: flex;
+    align-items: center;
+    &::after {
+      content: "";
+      border: 4px solid @color-main;
+      position: absolute;
+      width: 55px;
+      left: 0;
+      top: -30px;
+      z-index: -1;
+    }
+    &::before {
+      content: "";
+      width: 45px;
+      height: 45px;
+      border-radius: 50%;
+      background-color: @color-tone;
+      position: absolute;
+      z-index: -1;
+      left: -20px;
+      top: -10px;
+    }
+  }
+  .ready {
+    display: block;
+    margin: 0 auto;
+    width: 400px;
+    @media @tablet {
+      width: 80%;
+    }
+  }
+  .companies {
+    background-color: lighten(@color-tone, 5%);
+    border-radius: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    padding: 30px 30px;
+    margin: 0 auto;
+    margin-top: 0px;
+    width: 80%;
+    flex-wrap: wrap;
+    @media @tablet {
+      flex-direction: column;
+      justify-content: space-between;
+    }
+    .item {
+      @media @tablet {
+        margin-top: 30px;
+        &:first-child {
+          margin-top: 0;
+        }
+      }
+      .logo {
+        height: 43px;
+        margin: 0 auto;
+        display: block;
+      }
+      .intro {
+        text-align: center;
+        font-size: 16px;
+        max-width: 350px;
+        margin-top: 15px;
+        .quote {
+          width: 20px;
+          opacity: 0.5;
+          margin: 0 2px;
+        }
+      }
+      &.block {
+        display: block;
+        width: 100%;
+        margin-bottom: 30px;
+        .intro {
+          margin: 0 auto;
+        }
+      }
+      .bold {
+        font-weight: 600;
+      }
+    }
+  }
+  .logo-large {
+    width: 820px;
+    display: block;
+    margin: 80px auto;
+    @media @tablet {
+      width: 100%;
+    }
+  }
+  .links {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    @media @tablet {
+      flex-direction: column;
+      text-align: center;
+    }
+    a {
+      width: fit-content;
+      background-color: @color-tone;
+      padding: 5px 15px;
+      border: 4px solid @color-main;
+      border-radius: 1000px;
+      display: flex;
+      align-items: center;
+      margin-right: 20px;
+      font-size: 16px;
+      @media @tablet {
+        margin: 0 auto !important;
+        margin-bottom: 20px !important;
+      }
+      &:last-child {
+        margin-right: 0;
+      }
+      img {
+        margin-right: 8px;
+      }
+      &.github {
+        margin-right: 50px;
+        padding: 10px 22px;
+        font-size: 20px;
+        background-color: darken(@color-tone, 10%);
+        img {
+          width: 30px;
+        }
+      }
+    }
+  }
+  footer {
+    text-align: center;
+    opacity: 0.3;
+    font-weight: 600;
+    font-size: 18px;
+    margin-top: 100px;
+  }
+}
+</style>
