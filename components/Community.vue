@@ -6,14 +6,15 @@
     <h3 class="title">Nydus Community</h3>
     <img src="~/static/images/production.png" alt="" class="ready" />
     <div class="companies">
-      <div class="item block">
+      <div class="item">
+        <img src="~/static/images/aliyun.png" alt="" class="logo" />
         <div class="intro">
           <img
             src="~/static/images/quote-left.svg"
             alt=""
             class="quote"
-          />Serving container image acceleration in Technical Infrastructure of
-          <span class="bold">ByteDance</span>.<img
+          />Aliyun serverless image pull time drops from 20 seconds to 0.8s
+          seconds.<img
             src="~/static/images/quote-right.svg"
             alt=""
             class="quote"
@@ -36,14 +37,14 @@
         </div>
       </div>
       <div class="item">
-        <img src="~/static/images/aliyun.png" alt="" class="logo" />
         <div class="intro">
+          <div class="company-name">ByteDance</div>
           <img
             src="~/static/images/quote-left.svg"
             alt=""
             class="quote"
-          />Aliyun serverless image pull time drops from 20 seconds to 0.8s
-          seconds.<img
+          />Serving container image acceleration in Technical Infrastructure of
+          ByteDance.<img
             src="~/static/images/quote-right.svg"
             alt=""
             class="quote"
@@ -133,7 +134,7 @@ export default {
     padding: 30px 30px;
     margin: 0 auto;
     margin-top: 0px;
-    width: 80%;
+    width: 95%;
     flex-wrap: wrap;
     @media @tablet {
       flex-direction: column;
@@ -156,6 +157,11 @@ export default {
         font-size: 16px;
         max-width: 350px;
         margin-top: 15px;
+        .company-name {
+          font-size: 26px;
+          font-weight: bold;
+          margin-bottom: 15px;
+        }
         .quote {
           width: 20px;
           opacity: 0.5;

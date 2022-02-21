@@ -9,7 +9,7 @@ export default {
 
   // Global page headers: https://go.nuxtjs.dev/config-head
   head: {
-    title: 'Nydus - Acceleration Framework For Container Image',
+    title: 'Nydus - Acceleration Framework For Cloud-Native Distribution',
     htmlAttrs: {
       lang: 'en'
     },
@@ -17,7 +17,7 @@ export default {
       { charset: 'utf-8' },
       { name: 'viewport', content: 'width=device-width, initial-scale=1, maximum-scale=1, user-scalable=0' },
       { hid: 'description', name: 'description', content: 'Nydus Provides Fast, Secure And Easy Access to Data Distribution' },
-      { name: 'keywords', content: 'Nydus,OCI,Container,Image,Acceleration,Dragonfly,Rust,CloudNative,Kubernetes,Containerd,EROFS' },
+      { name: 'keywords', content: 'Nydus,OCI,Container,Image,Acceleration,Accelerator,Dragonfly,Distribution,Rust,CloudNative,Kubernetes,Containerd,Linux,EROFS,VirtioFS,FUSE' },
       { name: 'format-detection', content: 'telephone=no' }
     ],
     link: [
