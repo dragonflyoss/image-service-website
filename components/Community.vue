@@ -70,7 +70,17 @@
         ><img src="~/static/images/dingtalk.svg" alt="DingTalk" />DingTalk</a
       >
     </div>
-    <footer>© 2022 Nydus Developers</footer>
+    <footer>
+      <span>© 2022 Nydus Developers</span>
+      <a
+        href="https://creativecommons.org/licenses/by-nc-nd/4.0/"
+        target="_blank"
+        ><img
+          src="https://licensebuttons.net/l/by-nc-nd/4.0/80x15.png"
+          alt=""
+          class="license"
+      /></a>
+    </footer>
   </section>
 </template>
 
@@ -230,10 +240,19 @@ export default {
   }
   footer {
     text-align: center;
-    opacity: 0.3;
     font-weight: 600;
     font-size: 18px;
     margin-top: 100px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    .license {
+      margin-top: 10px;
+    }
+    span {
+      opacity: 0.3;
+    }
   }
 }
 </style>
