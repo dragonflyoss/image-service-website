@@ -16,8 +16,8 @@
       </a>
     </h3>
     <div class="desc">
-      Nydus implements a user-space filesystem to build a high efficient
-      read-only data distribution system for
+      Nydus is a powerful opensource filesystem solution to form a
+      high-efficiency image distribution system for
       <span class="bold">Cloud Native</span> workloads, such as container
       images, software packages, etc.
     </div>
