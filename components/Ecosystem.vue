@@ -136,8 +136,16 @@
             </div>
           </a>
           <div class="desc">
-            Run Nydus image in Kata security container, and Nydus has become the
-            preferred image solution for Kata.
+            Run Nydus image in Kata security container, Nydus has become a
+            native image solution of Kata containers since v2.4.0.
+            <div class="line">
+              For more details, see
+              <a
+                target="_blank"
+                href="https://github.com/kata-containers/kata-containers/blob/main/docs/design/kata-nydus-design.md"
+                ><span class="inline-highlight">here</span></a
+              >.
+            </div>
           </div>
         </div>
         <div class="item">
@@ -318,6 +326,9 @@ section {
         .desc {
           margin-top: 10px;
           line-height: 24px;
+          .line {
+            margin-top: 10px;
+          }
         }
       }
     }
