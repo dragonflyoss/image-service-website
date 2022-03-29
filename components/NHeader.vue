@@ -9,6 +9,12 @@
       <a href="#ecosystem">Ecosystem</a>
       <a href="#cases">Cases</a>
       <a href="#community">Community</a>
+      <a class="dragonfly" href="https://d7y.io/" target="_blank">
+        <img
+          src="~/static/images/dragonfly-logo.svg"
+          alt="Dragonfly"
+        />Dragonfly
+      </a>
       <a
         class="github"
         target="_blank"
@@ -50,7 +56,7 @@ header {
     font-size: 17px;
     a {
       position: relative;
-      margin-left: 30px;
+      margin-left: 20px;
       &:first-child {
         margin-left: 0;
       }
@@ -70,16 +76,32 @@ header {
       }
       &.github {
         background-color: @color-tone;
-        padding: 6px 15px;
+        width: 115px;
+        height: 38px;
         border: 3px solid @color-main;
         border-radius: 1000px;
         display: flex;
         align-items: center;
+        justify-content: center;
         img {
           margin-right: 8px;
         }
         @media @tablet {
           font-size: 14px;
+        }
+      }
+      &.dragonfly {
+        background-color: @color-tone;
+        width: 145px;
+        height: 38px;
+        border: 3px solid @color-main;
+        border-radius: 1000px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        img {
+          height: 21px;
+          margin-right: 8px;
         }
       }
     }
