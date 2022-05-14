@@ -10,16 +10,16 @@
       <a href="#cases">Cases</a>
       <a href="#community">Community</a>
       <a class="dragonfly" href="https://d7y.io/" target="_blank">
-        <img
-          src="~/static/images/dragonfly-logo.svg"
-          alt="Dragonfly"
-        />Dragonfly
+        <img src="~/static/images/dragonfly-logo.svg" alt="Dragonfly" />
+        <span>Dragonfly</span>
       </a>
       <a
         class="github"
         target="_blank"
         href="https://github.com/dragonflyoss/image-service"
-        ><img src="~/static/images/github.svg" alt="Nydus Github" />Github</a
+        ><img src="~/static/images/github.svg" alt="Nydus Github" /><span
+          >Github</span
+        ></a
       >
     </div>
   </header>
@@ -83,11 +83,22 @@ header {
         display: flex;
         align-items: center;
         justify-content: center;
+        @media @tablet {
+          width: 45px;
+          height: 45px;
+          font-size: 14px;
+          border: none;
+        }
+        span {
+          @media @tablet {
+            display: none;
+          }
+        }
         img {
           margin-right: 8px;
-        }
-        @media @tablet {
-          font-size: 14px;
+          @media @tablet {
+            margin-right: 0;
+          }
         }
       }
       &.dragonfly {
@@ -99,9 +110,22 @@ header {
         display: flex;
         align-items: center;
         justify-content: center;
+        @media @tablet {
+          width: 45px;
+          height: 45px;
+          border: none;
+        }
+        span {
+          @media @tablet {
+            display: none;
+          }
+        }
         img {
           height: 21px;
           margin-right: 8px;
+          @media @tablet {
+            margin-right: 0;
+          }
         }
       }
     }

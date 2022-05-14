@@ -149,6 +149,7 @@ export default {
     @media @tablet {
       flex-direction: column;
       justify-content: space-between;
+      padding: 10px 10px;
     }
     .item {
       @media @tablet {
