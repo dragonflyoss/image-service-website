@@ -37,8 +37,8 @@
         </div>
       </div>
       <div class="item">
+        <img src="~/static/images/bytedance.png" alt="" class="logo" />
         <div class="intro">
-          <div class="company-name">ByteDance</div>
           <img
             src="~/static/images/quote-left.svg"
             alt=""
