@@ -5,7 +5,10 @@
     </div>
     <h3 class="title">Nydus Community</h3>
     <img src="~/static/images/production.png" alt="" class="ready" />
-    <div class="companies">
+    <div class="desc">
+      <span class="bold">Partners</span>
+    </div>
+    <div class="partners">
       <div class="item">
         <img src="~/static/images/aliyun.png" alt="" class="logo" />
         <div class="intro">
@@ -52,6 +55,14 @@
         </div>
       </div>
     </div>
+    <div class="desc">
+      <span class="bold">Open Source Communities</span>
+    </div>
+    <div class="communities">
+      <div class="item">
+        <img src="~/static/images/openanolis-logo.png" alt="" class="openanolis-logo" />
+      </div>
+    </div>
     <img src="~/static/images/logo-large.png" alt="" class="logo-large" />
     <div class="links">
       <a
@@ -96,6 +107,24 @@ export default {
 .content {
   padding-top: 200px;
   margin-bottom: 20px;
+  > .desc {
+    margin: 0 auto;
+    width: fit-content;
+    margin-top: 15px;
+    color: @color-highlight;
+    font-weight: 400;
+    font-size: 22px;
+    display: flex;
+    align-items: center;
+    @media @tablet {
+      flex-direction: column;
+      text-align: center;
+      font-size: 18px;
+    }
+    .bold {
+      font-weight: 600;
+    }
+  }
   .line-bg {
     top: 50px;
     transform: scaleX(-1);
@@ -135,8 +164,7 @@ export default {
       width: 80%;
     }
   }
-  .companies {
-    background-color: lighten(@color-tone, 5%);
+  .partners, .communities {
     border-radius: 20px;
     display: flex;
     align-items: center;
@@ -162,6 +190,10 @@ export default {
         height: 43px;
         margin: 0 auto;
         display: block;
+      }
+      .openanolis-logo {
+        width: 200px;
+        margin-top: -40px;
       }
       .intro {
         text-align: center;
@@ -191,6 +223,9 @@ export default {
         font-weight: 600;
       }
     }
+  }
+  .partners {
+    margin-bottom: 50px;
   }
   .logo-large {
     width: 820px;
