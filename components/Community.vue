@@ -65,6 +65,9 @@
        <a class="item" target="_blank" href="https://openanolis.cn/?lang=en">
         <img src="~/static/images/openanolis-logo.png" alt="" class="logo openanolis" />
       </a>
+      <a class="item" target="_blank" href="https://goharbor.io/">
+        <img src="~/static/images/harbor-logo.png" alt="" class="logo" />
+      </a>
     </div>
     <img src="~/static/images/logo-large.png" alt="" class="logo-large" />
     <div class="links">
@@ -228,8 +231,9 @@ export default {
   }
   .communities {
     margin: 0 auto;
-    max-width: 600px;
+    max-width: 800px;
     display: flex;
+    flex-wrap: wrap;
     align-items: center;
     justify-content: space-around;
     .logo {
