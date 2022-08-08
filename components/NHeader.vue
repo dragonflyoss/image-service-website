@@ -10,7 +10,7 @@
       <a href="#cases">Cases</a>
       <a href="#community">Community</a>
       <a class="dragonfly" href="https://d7y.io/" target="_blank">
-        <img src="~/static/images/dragonfly-logo.svg" alt="Dragonfly" />
+        <img src="~/static/images/dragonfly-logo-small.svg" alt="Dragonfly" />
         <span>Dragonfly</span>
       </a>
       <a

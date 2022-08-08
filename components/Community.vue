@@ -59,9 +59,12 @@
       <span class="bold">Open Source Communities</span>
     </div>
     <div class="communities">
-      <div class="item">
-        <img src="~/static/images/openanolis-logo.png" alt="" class="openanolis-logo" />
-      </div>
+      <a class="item" target="_blank" href="https://d7y.io/">
+        <img src="~/static/images/dragonfly-logo.svg" alt="" class="logo" />
+      </a>
+       <a class="item" target="_blank" href="https://openanolis.cn/?lang=en">
+        <img src="~/static/images/openanolis-logo.png" alt="" class="logo openanolis" />
+      </a>
     </div>
     <img src="~/static/images/logo-large.png" alt="" class="logo-large" />
     <div class="links">
@@ -164,7 +167,7 @@ export default {
       width: 80%;
     }
   }
-  .partners, .communities {
+  .partners {
     border-radius: 20px;
     display: flex;
     align-items: center;
@@ -190,10 +193,6 @@ export default {
         height: 43px;
         margin: 0 auto;
         display: block;
-      }
-      .openanolis-logo {
-        width: 200px;
-        margin-top: -40px;
       }
       .intro {
         text-align: center;
@@ -226,6 +225,19 @@ export default {
   }
   .partners {
     margin-bottom: 50px;
+  }
+  .communities {
+    margin: 0 auto;
+    max-width: 600px;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    .logo {
+      width: 200px;
+      &.openanolis {
+        width: 160px;
+      }
+    }
   }
   .logo-large {
     width: 820px;
