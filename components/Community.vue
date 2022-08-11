@@ -62,11 +62,22 @@
       <a class="item" target="_blank" href="https://d7y.io/">
         <img src="~/static/images/dragonfly-logo.svg" alt="" class="logo" />
       </a>
-       <a class="item" target="_blank" href="https://openanolis.cn/?lang=en">
-        <img src="~/static/images/openanolis-logo.png" alt="" class="logo openanolis" />
+      <a class="item" target="_blank" href="https://openanolis.cn/?lang=en">
+        <img
+          src="~/static/images/openanolis-logo.png"
+          alt=""
+          class="logo openanolis"
+        />
       </a>
       <a class="item" target="_blank" href="https://goharbor.io/">
         <img src="~/static/images/harbor-logo.png" alt="" class="logo" />
+      </a>
+      <a
+        class="item sealer"
+        target="_blank"
+        href="https://github.com/sealerio/sealer"
+      >
+        <img src="~/static/images/sealer-logo.png" alt="" class="logo" />
       </a>
     </div>
     <img src="~/static/images/logo-large.png" alt="" class="logo-large" />
@@ -231,11 +242,16 @@ export default {
   }
   .communities {
     margin: 0 auto;
-    max-width: 800px;
+    max-width: 920px;
     display: flex;
     flex-wrap: wrap;
     align-items: center;
     justify-content: space-around;
+    .item.sealer {
+      .logo {
+        width: 80px;
+      }
+    }
     .logo {
       width: 200px;
       &.openanolis {
