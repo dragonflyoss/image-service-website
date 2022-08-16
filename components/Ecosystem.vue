@@ -116,6 +116,22 @@
           <a
             target="_blank"
             class="title"
+            href="https://github.com/containers/nydus-storage-plugin"
+          >
+            CRI-O/Podman Nydus Storage Plugin
+            <div class="arrow">
+              <img src="~/static/images/right.svg" alt="" />
+            </div>
+          </a>
+          <div class="desc">
+            An additional layer storage plugin provided Nydus images lazy
+            pulling ability for CRI-O/Podman.
+          </div>
+        </div>
+        <div class="item">
+          <a
+            target="_blank"
+            class="title"
             href="https://github.com/dragonflyoss/image-service/blob/master/contrib/docker-nydus-graphdriver/README.md"
           >
             Nydus Docker Graphdriver
