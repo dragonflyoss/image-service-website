@@ -62,6 +62,9 @@
       <a class="item" target="_blank" href="https://d7y.io/">
         <img src="~/static/images/dragonfly-logo.svg" alt="" class="logo" />
       </a>
+      <a class="item" target="_blank" href="https://katacontainers.io/">
+        <img src="~/static/images/kata-logo.svg" alt="" class="logo" />
+      </a>
       <a class="item" target="_blank" href="https://openanolis.cn/?lang=en">
         <img
           src="~/static/images/openanolis-logo.png"
@@ -242,7 +245,7 @@ export default {
   }
   .communities {
     margin: 0 auto;
-    max-width: 920px;
+    max-width: 1100px;
     display: flex;
     flex-wrap: wrap;
     align-items: center;
