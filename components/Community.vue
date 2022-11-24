@@ -54,6 +54,21 @@
           />
         </div>
       </div>
+      <div class="item">
+        <img src="~/static/images/kuaishou.png" alt="" class="logo" />
+        <div class="intro">
+          <img
+            src="~/static/images/quote-left.svg"
+            alt=""
+            class="quote"
+          />Starting to deploying millions of containers with Dragonfly and
+          Nydus.<img
+            src="~/static/images/quote-right.svg"
+            alt=""
+            class="quote"
+          />
+        </div>
+      </div>
     </div>
     <div class="desc">
       <span class="bold">Open Source Communities</span>
@@ -188,11 +203,11 @@ export default {
     border-radius: 20px;
     display: flex;
     align-items: center;
-    justify-content: space-around;
-    padding: 30px 30px;
+    justify-content: space-between;
+    padding: 10px 0;
     margin: 0 auto;
     margin-top: 0px;
-    width: 95%;
+    width: 70%;
     flex-wrap: wrap;
     @media @tablet {
       flex-direction: column;
@@ -200,6 +215,7 @@ export default {
       padding: 10px 10px;
     }
     .item {
+      margin-top: 50px;
       @media @tablet {
         margin-top: 30px;
         &:first-child {
@@ -214,7 +230,7 @@ export default {
       .intro {
         text-align: center;
         font-size: 16px;
-        max-width: 350px;
+        max-width: 380px;
         margin-top: 15px;
         .company-name {
           font-size: 26px;
