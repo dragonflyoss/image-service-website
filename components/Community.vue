@@ -61,7 +61,7 @@
             src="~/static/images/quote-left.svg"
             alt=""
             class="quote"
-          />Starting to deploying millions of containers with Dragonfly and
+          />Starting to deploy millions of containers with Dragonfly and
           Nydus.<img
             src="~/static/images/quote-right.svg"
             alt=""
