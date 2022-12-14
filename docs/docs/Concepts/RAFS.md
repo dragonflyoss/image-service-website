@@ -139,6 +139,89 @@ If there are multiple copies of the same chunk referenced by a RAFS filesystem, 
 For more information, please refer to [Chunk Deduplication](./chunk-dedup.md)
 
 ### Data Prefetch
+The data prefetch works together with data cache，where prefetched data will be stored on local disk in uncompressed or compressed format. When IO requests hit cache, the RAFS does not need to pull data from the storage backend, thus reducing latency caused by lazy loading.
+
+The fundamental  control flow for data prefetch:
+
+![Data Prefetch](img/data-prefetch.svg)
+
+The unit of data prefetch is chunk list. RAFS combines adjacent chunk lists into a `BIO` request to reduce the pressure for storage backend.
+
+There are two prefetch modes: `FS` and `Blob`.
+
+For `FS` prefetch mode, the RAFS will read prefetch table(inodes) from `bootstrap` file. And then convert the file list to chunk list by traversing blob information.
+
+The request sent to prefetch workers includes `blob ID`, `offset` and `length`.
+
+```rust
+pub struct BlobPrefetchRequest {
+    /// The ID of the blob to prefetch data for.
+    pub blob_id: String,
+    /// Offset into the blob to prefetch data.
+    pub offset: u64,
+    /// Size of data to prefetch.
+    pub len: u64,
+}
+
+```
+
+The `blob_id` identifies the unique blob file, the `offset` indicates the offset position of the blob file, and the `len` indicates the length of data to be prefetched.
+
+The configuration options for `FS` prefetch mode are as follows:
+
+```json
+"fs_prefetch": {
+    // Enable blob prefetch
+    "enable": false,
+    // Prefetch thread count
+    "threads_count": 10,
+    // Maximal read size per prefetch request, e.g. 128kb
+    "merging_size": 131072,
+    // Limit prefetch bandwidth to 1MB/S, it aims at reducing congestion with normal user io
+    "bandwidth_rate": 1048576
+}
+
+```
+
+The `enable` flag determines whether to enable `FS` prefetch. The `threads_count` limits the number of prefetch workers. The `merging_size`, united in bytes, limits the max size of `BIO` request(merged from chunk list), which can reduce the number of requests to backend storage. In addition, the `bandwidth_rate`, united in bytes as well, limits the maximum bandwidth for data prefetch, which can reduce the pressure on registry caused by data prefetch.
+
+When handling `FS` mode prefetch requests, RAFS sends `BlobIoRange` to prefetch workers, which is merged from multiple `Blob` ranges.
+
+```rust
+pub struct BlobIoRange {
+    pub blob_info: Arc<BlobInfo>,
+    pub blob_offset: u64,
+    pub blob_size: u64,
+    pub chunks: Vec<Arc<dyn BlobChunkInfo>>,
+    pub tags: Vec<BlobIoTag>,
+}
+
+```
+
+When handling `Blob` mode prefetch requests, RAFS only sends the offset and length of `Blob` to prefetch workers.
+
+At present, `Blob` prefetch mode is only available when the storage backend is `localFS`. To enable it, just set `readahead` to true.
+
+```json
+"backend": {
+  "type": "localfs",
+  "config": {
+    // The directory included all blob files declared in bootstrap
+    "dir": "/path/to/blobs/",
+    // Record read access log, prefetch data on next time
+    "readahead": true,
+    // Duration of recording access log
+    "readahead_sec": 10
+  }
+},
+
+```
+
+RAFS will send `Blob` mode prefetch requests to prefetch workers first to improve performance when `FS` mode prefetch requests exist at the same time.
+
+The data pulled by prefetch workers is stored in the corresponding range of local blob cache files.
+
+Moreover, RAFS supports `prefetch_all` option. When the `prefetch_all` is true, RAFS will prefetch the rest of data to the local `Blob` cache file.
 
 ## Detailed Data Structures
 
