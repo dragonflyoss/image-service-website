@@ -54,10 +54,34 @@
           </div>
         </div>
         <div class="item">
-          <a class="title"> Buildkit </a>
+          <a
+            target="_blank"
+            class="title"
+            href="https://github.com/moby/buildkit/blob/master/docs/nydus.md"
+          >
+            Buildkit
+            <div class="arrow">
+              <img src="~/static/images/right.svg" alt="" />
+            </div>
+          </a>
           <div class="desc">
             Provides the ability to build and export Nydus images directly from
             Dockerfile.
+          </div>
+        </div>
+        <div class="item">
+          <a
+            target="_blank"
+            class="title"
+            href="https://github.com/moby/buildkit/blob/master/docs/nydus.md"
+          >
+            Nerdctl image convert
+            <div class="arrow">
+              <img src="~/static/images/right.svg" alt="" />
+            </div>
+          </a>
+          <div class="desc">
+            The CLI to convert OCI image to Nydus image in containerd.
           </div>
         </div>
       </div>
@@ -70,7 +94,7 @@
           <a
             target="_blank"
             class="title"
-            href="https://github.com/dragonflyoss/dragonfly2"
+            href="https://d7y.io/blog/2022/11/03/dragonfly-integrates-nydus-for-image-acceleration-practice"
           >
             Dragonfly
             <div class="arrow">
@@ -83,11 +107,22 @@
           </div>
         </div>
         <div class="item">
-          <a class="title"> Storage Backend </a>
+          <a target="_blank" class="title" href="https://goharbor.io/">
+            Harbor
+            <div class="arrow">
+              <img src="~/static/images/right.svg" alt="" />
+            </div>
+          </a>
           <div class="desc">
-            Support for OCI-compatible distribution implementations such as
-            Docker Hub, Harbor, Github GHCR, ACR, and Aliyun OSS-like object
-            storage service.
+            Supports Nydus image distribution and preheat with Dragonfly.
+          </div>
+        </div>
+        <div class="item">
+          <a class="title">Storage Backend</a>
+          <div class="desc">
+            Supports for OCI-compatible distributions and object storage
+            services, (Such as Docker Hub, Harbor, Github GHCR, ACR, Aliyun OSS,
+            AWS S3, NAS, Local Disk).
           </div>
         </div>
       </div>
@@ -102,14 +137,13 @@
             class="title"
             href="https://github.com/containerd/nydus-snapshotter"
           >
-            Nydus Snapshotter
+            Containerd (Nerdctl run) / Kubernetes
             <div class="arrow">
               <img src="~/static/images/right.svg" alt="" />
             </div>
           </a>
           <div class="desc">
-            Works as a containerd remote snapshotter to help setup container
-            rootfs with Nydus image.
+            Works with containerd / kubernetes to run Nydus image.
           </div>
         </div>
         <div class="item">
@@ -118,7 +152,7 @@
             class="title"
             href="https://github.com/containers/nydus-storage-plugin"
           >
-            CRI-O/Podman Nydus Storage Plugin
+            CRI-O / Podman
             <div class="arrow">
               <img src="~/static/images/right.svg" alt="" />
             </div>
@@ -132,7 +166,7 @@
           <a
             target="_blank"
             class="title"
-            href="https://github.com/dragonflyoss/image-service/blob/master/contrib/docker-nydus-graphdriver/README.md"
+            href="https://github.com/nydusaccelerator/docker-nydus-graphdriver"
           >
             Nydus Docker Graphdriver
             <div class="arrow">
