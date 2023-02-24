@@ -131,7 +131,7 @@
       >
     </div>
     <footer>
-      <span>© 2022 Nydus Developers</span>
+      <span>© 2023 Nydus Developers</span>
       <a
         href="https://creativecommons.org/licenses/by-nc-nd/4.0/"
         target="_blank"
