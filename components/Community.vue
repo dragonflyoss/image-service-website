@@ -6,7 +6,7 @@
     <h3 class="title">Nydus Community</h3>
     <img src="~/static/images/production.png" alt="" class="ready" />
     <div class="desc">
-      <span class="bold">Partners</span>
+      <span class="bold">Partners & Adopters</span>
     </div>
     <div class="partners">
       <div class="item">
@@ -69,6 +69,20 @@
           />
         </div>
       </div>
+      <div class="item">
+        <img src="~/static/images/yuemiao-logo.png" alt="" class="logo" />
+        <div class="intro">
+          <img
+            src="~/static/images/quote-left.svg"
+            alt=""
+            class="quote"
+          />The startup time of micro service has been greatly improved, and reduced the network consumption.<img
+            src="~/static/images/quote-right.svg"
+            alt=""
+            class="quote"
+          />
+        </div>
+      </div>
     </div>
     <div class="desc">
       <span class="bold">Open Source Communities</span>
@@ -117,7 +131,7 @@
       >
     </div>
     <footer>
-      <span>© 2022 Nydus Developers</span>
+      <span>© 2023 Nydus Developers</span>
       <a
         href="https://creativecommons.org/licenses/by-nc-nd/4.0/"
         target="_blank"
@@ -203,11 +217,11 @@ export default {
     border-radius: 20px;
     display: flex;
     align-items: center;
-    justify-content: space-between;
+    justify-content: center;
     padding: 10px 0;
     margin: 0 auto;
     margin-top: 0px;
-    width: 70%;
+    width: 100%;
     flex-wrap: wrap;
     @media @tablet {
       flex-direction: column;
@@ -215,6 +229,7 @@ export default {
       padding: 10px 10px;
     }
     .item {
+      margin: 0 20px;
       margin-top: 50px;
       @media @tablet {
         margin-top: 30px;
