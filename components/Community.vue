@@ -83,6 +83,20 @@
           />
         </div>
       </div>
+      <div class="item">
+        <img src="~/static/images/coreweave-logo.svg" alt="" class="logo coreweave" />
+        <div class="intro">
+          <img
+            src="~/static/images/quote-left.svg"
+            alt=""
+            class="quote"
+          />Dramatically reduce the pull time of container image which embedded machine learning models.<img
+            src="~/static/images/quote-right.svg"
+            alt=""
+            class="quote"
+          />
+        </div>
+      </div>
     </div>
     <div class="desc">
       <span class="bold">Open Source Communities</span>
@@ -241,6 +255,9 @@ export default {
         height: 43px;
         margin: 0 auto;
         display: block;
+        &.coreweave {
+          height: 35px;
+        }
       }
       .intro {
         text-align: center;
