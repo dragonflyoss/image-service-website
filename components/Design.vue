@@ -36,7 +36,7 @@
           <div class="intro">
             <div class="title">Low Cost</div>
             <div class="desc">
-              Written in memory-safed
+              Written in memory-safed language
               <span class="inline-highlight">Rust</span>, numerous optimizations
               help improve memory, CPU, and network consumption.
             </div>
@@ -47,11 +47,11 @@
             <img src="~/static/images/drum.png" alt="" class="emoji" />
           </div>
           <div class="intro">
-            <div class="title">Extensible and Flexible</div>
+            <div class="title">Flexible</div>
             <div class="desc">
-              Confidential container, vulnerability scan, support both runC
-              native container and
-              <span class="inline-highlight">Kata Container</span>.
+              Supports container runtimes such as runC, 
+              <span class="inline-highlight">Kata</span>, CRI-O 
+              and confidential containers.
             </div>
           </div>
         </div>
@@ -63,7 +63,8 @@
             <div class="title">Security</div>
             <div class="desc">
               End to end data integrity check, Supply Chain Attack can be
-              detected and avoided at runtime.
+              detected and avoided at runtime. 
+              And also support vulnerability scanning capabilities.
             </div>
           </div>
         </div>
@@ -102,10 +103,10 @@
             <img src="~/static/images/helmet.png" alt="" class="emoji" />
           </div>
           <div class="intro">
-            <div class="title">End-to-end Data Integrity</div>
+            <div class="title">POSIX Compatibility</div>
             <div class="desc">
-              File metadata and blob data can be both validated in transmission
-              and at runtime.
+              In-Kernel EROFS, FUSE and VirtioFS support 
+              provides full POSIX compatibility.
             </div>
           </div>
         </div>
@@ -116,8 +117,8 @@
           <div class="intro">
             <div class="title">Compatible with Ecosystem</div>
             <div class="desc">
-              Support with Registry, OSS, NAS, Shared Disk, and P2P service,
-              compatible with the OCI spec.
+              Support with Registry, OSS, NAS, Shared Disk, and P2P services.
+              And compatible with the OCI specification.
             </div>
           </div>
         </div>
