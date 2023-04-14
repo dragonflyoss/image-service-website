@@ -27,16 +27,29 @@
         </div>
       </h1>
       <h2 class="subtitle">
-        A Dragonfly (CNCF incubating project) sub-project
+        A sub-project of Dragonfly (CNCF incubating)
       </h2>
-      <a
-        target="_blank"
-        href="https://github.com/dragonflyoss/image-service"
-        class="start"
-      >
-        <img src="~/static/images/rocket.svg" alt="" class="rocket" />
-        <span>Get Started</span>
-      </a>
+      <div style="display: flex">
+        <div>
+          <a
+            target="_blank"
+            href="https://github.com/dragonflyoss/image-service#readme"
+            class="start"
+          >
+            <img src="~/static/images/rocket.svg" alt="" class="rocket" />
+            <span>Quick Start</span>
+          </a>
+        </div>
+        <div>
+          <a
+            target="_blank"
+            href="https://github.com/dragonflyoss/image-service/wiki/FAQ"
+            class="start faq"
+          >
+            <span>FAQ</span>
+          </a>
+        </div>
+      </div>
     </div>
     <div class="right">
       <img src="~/static/images/perf.png" alt="" class="perf" />
@@ -162,13 +175,16 @@ export default {
     }
     .start {
       background-color: @color-tone;
-      padding: 9px 15px;
+      padding: 7px 20px;
       border: 3px solid @color-main;
       border-radius: 1000px;
       display: flex;
       align-items: center;
       width: fit-content;
       font-weight: 600;
+      &.faq {
+        margin-left: 20px;
+      }
       img {
         margin-right: 8px;
       }

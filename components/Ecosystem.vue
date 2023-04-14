@@ -75,7 +75,7 @@
             class="title"
             href="https://github.com/moby/buildkit/blob/master/docs/nydus.md"
           >
-            Nerdctl image convert
+            Nerdctl
             <div class="arrow">
               <img src="~/static/images/right.svg" alt="" />
             </div>
@@ -94,7 +94,7 @@
           <a
             target="_blank"
             class="title"
-            href="https://d7y.io/blog/2022/11/03/dragonfly-integrates-nydus-for-image-acceleration-practice"
+            href="https://github.com/dragonflyoss/helm-charts/blob/main/INSTALL.md"
           >
             Dragonfly
             <div class="arrow">
@@ -143,39 +143,22 @@
             </div>
           </a>
           <div class="desc">
-            Works with containerd / kubernetes to run Nydus image.
+            Works with Containerd / kubernetes to run Nydus image.
           </div>
         </div>
         <div class="item">
           <a
             target="_blank"
             class="title"
-            href="https://github.com/containers/nydus-storage-plugin"
+            href="https://github.com/dragonflyoss/image-service/blob/master/docs/docker-env-setup.md"
           >
-            CRI-O / Podman
+            Docker / Moby
             <div class="arrow">
               <img src="~/static/images/right.svg" alt="" />
             </div>
           </a>
           <div class="desc">
-            An additional layer storage plugin provided Nydus images lazy
-            pulling ability for CRI-O/Podman.
-          </div>
-        </div>
-        <div class="item">
-          <a
-            target="_blank"
-            class="title"
-            href="https://github.com/nydusaccelerator/docker-nydus-graphdriver"
-          >
-            Nydus Docker Graphdriver
-            <div class="arrow">
-              <img src="~/static/images/right.svg" alt="" />
-            </div>
-          </a>
-          <div class="desc">
-            Works as a docker remote graph driver for preparing nydus image
-            layer to bootstrap docker container.
+            Run Nydus image in Docker / Moby container with Containerd and nydus-snapshotter.
           </div>
         </div>
         <div class="item">
@@ -196,6 +179,22 @@
                 ><span class="inline-highlight">here</span></a
               >.
             </div>
+          </div>
+        </div>
+        <div class="item">
+          <a
+            target="_blank"
+            class="title"
+            href="https://github.com/containers/nydus-storage-plugin"
+          >
+            CRI-O / Podman
+            <div class="arrow">
+              <img src="~/static/images/right.svg" alt="" />
+            </div>
+          </a>
+          <div class="desc">
+            An additional layer storage plugin provided Nydus images lazy
+            pulling ability for CRI-O/Podman.
           </div>
         </div>
         <div class="item">
