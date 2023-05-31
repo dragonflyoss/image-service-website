@@ -73,7 +73,7 @@
           <a
             target="_blank"
             class="title"
-            href="https://github.com/moby/buildkit/blob/master/docs/nydus.md"
+            href="https://github.com/containerd/nerdctl/blob/main/docs/nydus.md"
           >
             Nerdctl
             <div class="arrow">
@@ -81,7 +81,7 @@
             </div>
           </a>
           <div class="desc">
-            The CLI to convert OCI image to Nydus image in containerd.
+            A docker like CLI to convert/run Nydus image in containerd.
           </div>
         </div>
       </div>
