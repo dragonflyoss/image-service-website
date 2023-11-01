@@ -8,7 +8,7 @@
       <span>Working Hard on Toolchain Support</span>
       <a
         target="_blank"
-        href="https://github.com/dragonflyoss/image-service"
+        href="https://github.com/dragonflyoss/nydus"
         class="more"
       >
         <span>Contribute</span>
@@ -25,7 +25,7 @@
           <a
             target="_blank"
             class="title"
-            href="https://github.com/dragonflyoss/image-service/blob/master/docs/nydusify.md"
+            href="https://github.com/dragonflyoss/nydus/blob/master/docs/nydusify.md"
           >
             Nydusify
             <div class="arrow">
@@ -150,7 +150,7 @@
           <a
             target="_blank"
             class="title"
-            href="https://github.com/dragonflyoss/image-service/blob/master/docs/docker-env-setup.md"
+            href="https://github.com/dragonflyoss/nydus/blob/master/docs/docker-env-setup.md"
           >
             Docker / Moby
             <div class="arrow">
