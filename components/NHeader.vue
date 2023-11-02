@@ -16,7 +16,7 @@
       <a
         class="github"
         target="_blank"
-        href="https://github.com/dragonflyoss/image-service"
+        href="https://github.com/dragonflyoss/nydus"
         ><img src="~/static/images/github.svg" alt="Nydus Github" /><span
           >Github</span
         ></a

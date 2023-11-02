@@ -69,7 +69,7 @@ const config = {
           },
           // { to: '/blog', label: 'Blog', position: 'left' },
           {
-            href: 'https://github.com/dragonflyoss/image-service',
+            href: 'https://github.com/dragonflyoss/nydus',
             label: 'GitHub',
             position: 'right',
           },

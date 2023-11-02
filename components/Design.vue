@@ -8,7 +8,7 @@
       <span>Focus on Performance and Low Cost</span>
       <a
         target="_blank"
-        href="https://github.com/dragonflyoss/image-service/blob/master/docs/nydus-design.md"
+        href="https://github.com/dragonflyoss/nydus/blob/master/docs/nydus-design.md"
         class="more"
       >
         <span>Read Doc</span>

@@ -33,7 +33,7 @@
         <div>
           <a
             target="_blank"
-            href="https://github.com/dragonflyoss/image-service#readme"
+            href="https://github.com/dragonflyoss/nydus#readme"
             class="start"
           >
             <img src="~/static/images/rocket.svg" alt="" class="rocket" />
@@ -43,7 +43,7 @@
         <div>
           <a
             target="_blank"
-            href="https://github.com/dragonflyoss/image-service/wiki/FAQ"
+            href="https://github.com/dragonflyoss/nydus/wiki/FAQ"
             class="start faq"
           >
             <span>FAQ</span>
