@@ -27,7 +27,7 @@
         </div>
       </h1>
       <h2 class="subtitle">
-        A sub-project of Dragonfly (CNCF incubating)
+        A sub-project of Dragonfly (CNCF Graduated)
       </h2>
       <div style="display: flex">
         <div>
