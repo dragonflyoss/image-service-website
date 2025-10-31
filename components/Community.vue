@@ -145,7 +145,7 @@
       >
     </div>
     <footer>
-      <span>© 2024 Nydus Developers</span>
+      <span>© 2025 Nydus Developers</span>
       <a
         href="https://creativecommons.org/licenses/by-nc-nd/4.0/"
         target="_blank"
